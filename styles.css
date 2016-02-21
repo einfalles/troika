@@ -1,7 +1,6 @@
 * {
 	box-sizing: border-box;
-	transition: all .5s ease-in;
-	-webkit-transition: all .5s ease-in;
+
 }
 html {
 	height:100%;
@@ -11,7 +10,7 @@ body{
     width: 100%;
     height:100%;
     margin: 0;
-		font-family: "FreightDisp Pro", sans-serif;
+		font-family: "FreightBig Pro", sans-serif;
 }
 .container {
 	width:100%; height:100%;
@@ -27,7 +26,144 @@ body{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	transition: all .5s ease-in;
+	-webkit-transition: all .5s ease-in;
 }
+form {
+	margin-top:1.5em;
+	height:3em;
+}
+form input, form button {
+	height:100%;
+}
+form button {
+  width: 18%;
+	font-family: "Brandon Text";
+	padding:1px;
+	border: 1px solid #1484BF;
+	background-color: #1484BF;
+	color: white;
+	border-radius: 2px;
+	margin-left:10px;
+}
+form button:hover{
+	border: 1px solid #2196F3;
+	background-color: #2196F3;
+}
+form input {
+	padding-left:8px;
+	border: 1px solid rgba(255,255,255,0.1);
+	background-color:rgba(255,255,255,0.4);
+	border-radius:2px;
+	line-height: 2;
+	font-family: "Brandon Text";
+	color:rgba(255,255,255,1);
+	box-sizing: border-box;
+	outline: none;
+	margin:0;
+}
+form input:hover {
+	/*border:1px solid #2196F3;*/
+}
+form input:focus, textarea:focus, form input:active {
+  /*padding: 3px 0px 3px 3px;*/
+  /*margin: 5px 1px 3px 0px;*/
+  outline: none;
+	box-shadow:0 0 0 0;
+  border: 1px inset #2793C7;
+}
+input::-webkit-input-placeholder{
+	color:rgba(255,255,255,0.8);
+	font-family: "Brandon Text";
+}
+.footer {
+	background-color:rgba(0,0,0,0);
+	/*background-color:white;*/
+	height: 30px;
+	padding:0 64px;
+	margin-top: -30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.footer p, .footer a {
+	font-size:1rem;
+  margin: 0;
+	font-weight:bold;
+	text-decoration: none;
+	color:rgba(255,255,255,0.8);
+	letter-spacing: 0.25px;
+	margin-left:32px;
+}
+/*.footer a {
+	margin-left:32px;
+}*/
+.footer a:hover{
+	color:#2196F3;
+}
+.duck {
+	/*border: 36px solid white;*/
+	width:100%; height:100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction:column;
+	overflow:hidden;
+	margin:0;
+	position:relative;
+}
+.left {
+	background-color:#050E1F;
+	display: flex;
+	flex: 0 0 20%;
+	flex-direction: column;
+}
+.left--header{
+	width: 100%;
+	display: flex;
+	flex: 0 0 100%;
+	align-items: center;
+	justify-content: center;
+	padding: 4em 2em;
+}
+.left--links a{
+	color:white;
+}
+.right,
+.full {
+	display: flex;
+	flex-direction:column;
+	flex: 0 0 100%;
+	background: url("bottle2.jpg") no-repeat center center local;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding:64px;
+  justify-content: center;
+}
+.full--log {
+	width:45%;
+}
+.full--log h1{
+	font-size:4em;
+	line-height: 1.25;
+	text-decoration: none;
+	font-weight:normal;
+}
+.full--log span{
+	font-weight:bold;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.full--log .full--info{
+	font-size:1.5em;
+	margin-top:0.5em;
+	font-weight:lighter;
+}
+.right {
+	flex: 0 0 80%;
+}
+
 .header {
 	position: absolute;
 	top: 0;
@@ -41,7 +177,7 @@ body{
 	text-align: center;
 }
 h1 {
-	color: white;
+	color: #F9F9F9;
 	line-height: 0.9;
 	/*border-bottom: 8px solid white;*/
 	text-decoration: underline;
