@@ -1,0 +1,149 @@
+* {
+	box-sizing: border-box;
+	transition: all .5s ease-in;
+	-webkit-transition: all .5s ease-in;
+}
+html {
+	height:100%;
+}
+
+body{
+    width: 100%;
+    height:100%;
+    margin: 0;
+		font-family: "FreightDisp Pro", sans-serif;
+}
+.container {
+	width:100%; height:100%;
+	background: url("bottle4.jp.jpg") no-repeat center 50% fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding:32px;
+	position: relative;
+	display: flex;
+	border: 30px solid white;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0 auto;
+	width: 100%;
+	margin-top: -28px;
+	font-size: 18px;
+}
+.hero-content {
+	text-align: center;
+}
+h1 {
+	color: white;
+	line-height: 0.9;
+	/*border-bottom: 8px solid white;*/
+	text-decoration: underline;
+	font-size:5em;
+	margin:0;
+}
+small {
+	font-size:50%;
+}
+small h1 {
+	text-decoration: none;
+	margin:16px 0 8px 0;
+}
+.nav {
+	margin:0;
+  width: 100%;
+  text-align: center;
+  padding-top: 24px;
+	word-spacing: 30px;
+	color: green;
+
+	text-align: center;
+	padding: 0;
+}
+
+.nav li {
+	list-style-type: none;
+	display: inline;
+
+
+
+
+}
+
+li{
+	font-family: georgia;
+	list-style-type: circle;
+
+}
+
+.nav a {
+	color: black;
+	text-decoration: none;
+	letter-spacing: 5px;
+	word-spacing: 22px;
+	font-family: courier;
+	font-weight: normal;
+
+
+
+}
+.main a {
+	color:white;
+}
+.main p {
+	font-size:1.5em;
+	color: white;
+}
+.main a:hover {
+	color: #D2694A;
+	transition: color 0.1s ease-out;
+	-webkit-transition: color 0.1s ease-out;
+}
+.nav a:hover, a:focus {
+	color: #D2694A;
+	font: bold small-caps 18px/18px;
+
+}
+
+.nav a:active {
+	background-color: black
+
+}
+
+.bg {
+  position: fixed;
+  width: 100%;
+ margin-top: 60px;
+
+
+}
+
+.title{
+	font-size: 12px;
+	font-family: arial, sans-serif;
+	position: 100px 100px;
+
+}
+
+.footer {
+	font-size: 10px;
+}
+
+@media only screen and (max-width : 550px) {
+	h1 {
+		font-size:5em;
+	}
+	.container {
+		border:15px solid white;
+	}
+	.header {
+		margin-top:1em;
+		font-size:14px;
+	}
+}
