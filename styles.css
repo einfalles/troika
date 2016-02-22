@@ -1,3 +1,4 @@
+
 * {
 	box-sizing: border-box;
 
@@ -14,7 +15,7 @@ body{
 }
 .container {
 	width:100%; height:100%;
-	background: url("bottle4.jp.jpg") no-repeat center 50% fixed;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url("bottle4.jp.jpg") no-repeat center 50% fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -83,6 +84,7 @@ input::-webkit-input-placeholder{
 	color:rgba(255,255,255,0.8);
 	font-family: "Brandon Text";
 }
+
 .footer {
 	background-color:rgba(0,0,0,0);
 	/*background-color:white;*/
@@ -125,10 +127,83 @@ input::-webkit-input-placeholder{
 	margin:0;
 	position:relative;
 }
-.left {
-	background-color:#050E1F;
+.goose {
+	width:100%; height:100%;
+	box-sizing: border-box;
 	display: flex;
-	flex: 0 0 20%;
+	flex-direction:column;
+	font-family: "Brandon Text";
+	overflow:hidden;
+	margin:0;
+	position:relative;
+	background-color:coral;
+}
+.goose-top {
+	display: flex;
+	flex: 0 0 92%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15)),url("BEUT.jpg") no-repeat left bottom local;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.goose-top h1 {
+  font-weight: 400;
+	color:#f9f9f9;
+	font-size:3em;
+}
+.goose-line{
+	width: 25%;
+}
+.goose-line, .goose-line h3{
+	text-align: center;
+	color:white;
+	font-weight:400;
+}
+.goose .footer {
+	margin-top:0;
+	position: absolute;
+	right: 0;
+	bottom: 10%;
+	color: black;
+	z-index: 999;
+}
+.goose-bottom {
+	display: flex;
+	flex: 0 0 8%;
+	background-color:white;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.goose form {
+	margin:0;
+	height: 2.5em;
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.goose input {
+	border:1px solid rgba(0,0,0,0.1);
+	width:20%;
+	color:rgba(0,0,0,0.8);
+}
+.goose input::-webkit-input-placeholder{
+	color:rgba(0,0,0,0.5);
+	font-family: "Brandon Text";
+}
+.goose button {
+	width:10%;
+}
+.left {
+	background-color:#fff;
+	display: flex;
+	flex: 0 0 50%;
 	flex-direction: column;
 }
 .left--header{
@@ -141,6 +216,9 @@ input::-webkit-input-placeholder{
 }
 .left--links a{
 	color:white;
+}
+.left--log h1 {
+	color: black;
 }
 .right,
 .full {
@@ -155,8 +233,31 @@ input::-webkit-input-placeholder{
 	padding:64px;
   justify-content: center;
 }
+.goose .full {
+	background-color:coral;
+	padding:0;
+	justify-content: initial;
+}
+.right {
+	flex:0 0 50%;
+	background: url("bottle2.jpg") no-repeat center center local;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 .full--log {
 	width:45%;
+}
+.goose .full--log {
+	width:100%;
+	display: flex;
+	background:     linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15)),url("BEUT.jpg") no-repeat left bottom fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  flex: 1 0 90vh;
 }
 .full--log h1{
 	font-size:4em;
@@ -174,10 +275,25 @@ input::-webkit-input-placeholder{
 	margin-top:0.5em;
 	font-weight:lighter;
 }
-.right {
-	flex: 0 0 80%;
-}
 
+.full--links {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	flex-grow: 1;
+	width: 100%;
+	position: absolute;
+	left: 0;
+}
+.goose .full--links {
+	position: relative;
+}
+.goose .full--links, .goose .full--links h2{
+	font-family: "Avenir",sans-serif;
+	color: white;
+	font-weight: 400;
+}
 .header {
 	position: absolute;
 	top: 0;
