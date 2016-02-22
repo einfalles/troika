@@ -29,6 +29,13 @@ body{
 	transition: all .5s ease-in;
 	-webkit-transition: all .5s ease-in;
 }
+.container form {
+	text-align:center;
+	height:2.25em;
+}
+.container form input {
+	width:40%;
+}
 form {
 	margin-top:1.5em;
 	height:3em;
@@ -86,6 +93,13 @@ input::-webkit-input-placeholder{
 	flex-direction: row;
 	justify-content: flex-end;
 }
+
+.container .footer {
+	padding:0 32px;
+	position: absolute;
+	bottom:0;right:0;
+}
+
 .footer p, .footer a {
 	font-size:1rem;
   margin: 0;
