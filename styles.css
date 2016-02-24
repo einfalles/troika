@@ -1,52 +1,59 @@
-
-* {
-	box-sizing: border-box;
-
-}
-html {
-	height:100%;
-}
+* { box-sizing: border-box; }
+html { height:100%; }
 
 body{
-    width: 100%;
-    height:100%;
-    margin: 0;
-		font-family: "FreightBig Pro", sans-serif;
+	width: 100%;
+	height:100%;
+	margin: 0;
 }
-.container {
-	width:100%; height:100%;
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url("bottle4.jp.jpg") no-repeat center 50% fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	padding:32px;
-	position: relative;
-	display: flex;
-	border: 30px solid white;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	transition: all .5s ease-in;
-	-webkit-transition: all .5s ease-in;
+a {
+	color: #f9f9f9;
+	font-weight: bold;
+	text-decoration: underline;
+
 }
-.container form {
-	text-align:center;
-	height:2.25em;
+h1 {
+	color: #F9F9F9;
+	line-height: 0.9;
+	text-decoration: underline;
+	font-size:5em;
+	margin:0;
 }
-.container form input {
-	width:40%;
+small { font-size:50%; }
+
+small h1 {
+	text-decoration: none;
+	margin:16px 0 8px 0;
 }
+
 form {
 	margin-top:1.5em;
 	height:3em;
 }
+
 form input, form button {
 	height:100%;
 }
+
+form input {
+	padding-left:8px;
+	border: 1px solid rgba(255,255,255,0.1);
+	background-color:rgba(255,255,255,0.4);
+	border-radius:2px;
+	line-height: 2;
+	color:rgba(255,255,255,1);
+	box-sizing: border-box;
+	outline: none;
+	margin:0;
+	width:50%;
+}
+
+form input::-webkit-input-placeholder{
+	color:rgba(255,255,255,0.8);
+}
+
 form button {
   width: 18%;
-	font-family: "Brandon Text";
 	padding:1px;
 	border: 1px solid #1484BF;
 	background-color: #1484BF;
@@ -54,35 +61,13 @@ form button {
 	border-radius: 2px;
 	margin-left:10px;
 }
-form button:hover{
-	border: 1px solid #2196F3;
-	background-color: #2196F3;
-}
-form input {
-	padding-left:8px;
-	border: 1px solid rgba(255,255,255,0.1);
-	background-color:rgba(255,255,255,0.4);
-	border-radius:2px;
-	line-height: 2;
-	font-family: "Brandon Text";
-	color:rgba(255,255,255,1);
-	box-sizing: border-box;
-	outline: none;
-	margin:0;
-}
-form input:hover {
-	/*border:1px solid #2196F3;*/
-}
+
 form input:focus, textarea:focus, form input:active {
   /*padding: 3px 0px 3px 3px;*/
   /*margin: 5px 1px 3px 0px;*/
   outline: none;
 	box-shadow:0 0 0 0;
   border: 1px inset #2793C7;
-}
-input::-webkit-input-placeholder{
-	color:rgba(255,255,255,0.8);
-	font-family: "Brandon Text";
 }
 
 .footer {
@@ -96,12 +81,6 @@ input::-webkit-input-placeholder{
 	justify-content: flex-end;
 }
 
-.container .footer {
-	padding:0 32px;
-	position: absolute;
-	bottom:0;right:0;
-}
-
 .footer p, .footer a {
 	font-size:1rem;
   margin: 0;
@@ -111,116 +90,16 @@ input::-webkit-input-placeholder{
 	letter-spacing: 0.25px;
 	margin-left:32px;
 }
-/*.footer a {
-	margin-left:32px;
-}*/
-.footer a:hover{
-	color:#2196F3;
-}
+
 .duck {
-	/*border: 36px solid white;*/
 	width:100%; height:100%;
-	box-sizing: border-box;
 	display: flex;
 	flex-direction:column;
 	overflow:hidden;
 	margin:0;
 	position:relative;
 }
-.goose {
-	width:100%; height:100%;
-	box-sizing: border-box;
-	display: flex;
-	flex-direction:column;
-	font-family: "Brandon Text";
-	overflow:hidden;
-	margin:0;
-	position:relative;
-	background-color:coral;
-}
-.goose-top {
-	display: flex;
-	flex: 0 0 92%;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15)),url("BEUT.jpg") no-repeat left bottom local;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-.goose-top h1 {
-  font-weight: 400;
-	color:#f9f9f9;
-	font-size:3em;
-}
-.goose-line{
-	width: 25%;
-}
-.goose-line, .goose-line h3{
-	text-align: center;
-	color:white;
-	font-weight:400;
-}
-.goose .footer {
-	margin-top:0;
-	position: absolute;
-	right: 0;
-	bottom: 10%;
-	color: black;
-	z-index: 999;
-}
-.goose-bottom {
-	display: flex;
-	flex: 0 0 8%;
-	background-color:white;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-}
-.goose form {
-	margin:0;
-	height: 2.5em;
-	width: 80%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.goose input {
-	border:1px solid rgba(0,0,0,0.1);
-	width:20%;
-	color:rgba(0,0,0,0.8);
-}
-.goose input::-webkit-input-placeholder{
-	color:rgba(0,0,0,0.5);
-	font-family: "Brandon Text";
-}
-.goose button {
-	width:10%;
-}
-.left {
-	background-color:#fff;
-	display: flex;
-	flex: 0 0 50%;
-	flex-direction: column;
-}
-.left--header{
-	width: 100%;
-	display: flex;
-	flex: 0 0 100%;
-	align-items: center;
-	justify-content: center;
-	padding: 4em 2em;
-}
-.left--links a{
-	color:white;
-}
-.left--log h1 {
-	color: black;
-}
-.right,
+
 .full {
 	display: flex;
 	flex-direction:column;
@@ -233,38 +112,16 @@ input::-webkit-input-placeholder{
 	padding:64px;
   justify-content: center;
 }
-.goose .full {
-	background-color:coral;
-	padding:0;
-	justify-content: initial;
-}
-.right {
-	flex:0 0 50%;
-	background: url("bottle2.jpg") no-repeat center center local;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-.full--log {
-	width:45%;
-}
-.goose .full--log {
-	width:100%;
-	display: flex;
-	background:     linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15)),url("BEUT.jpg") no-repeat left bottom fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-  flex: 1 0 90vh;
-}
+
+.full--log { width:45%; }
+
 .full--log h1{
 	font-size:4em;
-	line-height: 1.25;
+	line-height: 1.1;
 	text-decoration: none;
 	font-weight:normal;
 }
+
 .full--log span{
 	font-weight:bold;
 	cursor: pointer;
@@ -272,8 +129,9 @@ input::-webkit-input-placeholder{
 }
 .full--log .full--info{
 	font-size:1.5em;
-	margin-top:0.5em;
+	margin-top:1em;
 	font-weight:lighter;
+	line-height: 1.5;
 }
 
 .full--links {
@@ -286,119 +144,19 @@ input::-webkit-input-placeholder{
 	position: absolute;
 	left: 0;
 }
-.goose .full--links {
-	position: relative;
-}
-.goose .full--links, .goose .full--links h2{
-	font-family: "Avenir",sans-serif;
-	color: white;
-	font-weight: 400;
-}
-.header {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin: 0 auto;
-	width: 100%;
-	margin-top: -28px;
-	font-size: 18px;
-}
-.hero-content {
-	text-align: center;
-}
-h1 {
-	color: #F9F9F9;
-	line-height: 0.9;
-	/*border-bottom: 8px solid white;*/
-	text-decoration: underline;
-	font-size:5em;
-	margin:0;
-}
-small {
-	font-size:50%;
-}
-small h1 {
-	text-decoration: none;
-	margin:16px 0 8px 0;
-}
-.nav {
-	margin:0;
-  width: 100%;
-  text-align: center;
-  padding-top: 24px;
-	word-spacing: 30px;
-	color: green;
 
-	text-align: center;
-	padding: 0;
+form input:hover {
+	/*border:1px solid #2196F3;*/
+}
+form button:hover{
+	border: 1px solid #2196F3;
+	background-color: #2196F3;
 }
 
-.nav li {
-	list-style-type: none;
-	display: inline;
-
-
-
-
-}
-
-li{
-	font-family: georgia;
-	list-style-type: circle;
-
-}
-
-.nav a {
-	color: black;
-	text-decoration: none;
-	letter-spacing: 5px;
-	word-spacing: 22px;
-	font-family: courier;
-	font-weight: normal;
-
-
-
-}
-.main a {
-	color:white;
-}
-.main p {
-	font-size:1.5em;
-	color: white;
-}
-.main a:hover {
-	color: #D2694A;
-	transition: color 0.1s ease-out;
-	-webkit-transition: color 0.1s ease-out;
-}
-.nav a:hover, a:focus {
-	color: #D2694A;
-	font: bold small-caps 18px/18px;
-
-}
-
-.nav a:active {
-	background-color: black
-
-}
-
-.bg {
-  position: fixed;
-  width: 100%;
- margin-top: 60px;
-
-
-}
-
-.title{
-	font-size: 12px;
-	font-family: arial, sans-serif;
-	position: 100px 100px;
-
-}
-
-.footer {
-	font-size: 10px;
+a:hover{
+	color:coral;
+	transition: all .25s ease;
+	-webkit-transition: all .25s ease;
 }
 
 @media only screen and (max-width : 550px) {
