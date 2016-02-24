@@ -104,7 +104,7 @@ form input:focus, textarea:focus, form input:active {
 	display: flex;
 	flex-direction:column;
 	flex: 0 0 100%;
-	background: url("bottle2.jpg") no-repeat center center local;
+	background: url("bottle-75.jpg") no-repeat center center local;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -176,7 +176,7 @@ a:hover{
 }
 @media only screen and (min-width : 768px) and (max-width : 1024px)  {
 	.full {
-		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("bottle2.jpg") no-repeat center top local;
+		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("bottle-50.jpg") no-repeat center top local;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -187,9 +187,17 @@ a:hover{
 	}
 	.full--log h1 {
 		text-align: center;
+		font-size:7em;
+	}
+	.full--log .full--info {
+		font-size:2.5em;
 	}
 	form {
 		text-align: center;
+		font-size:2.5em;
+	}
+	form button {
+		width:45%;
 	}
 	.full--log h1 span {
 		display: inline-block;
