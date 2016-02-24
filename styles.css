@@ -105,6 +105,7 @@ form input:focus, textarea:focus, form input:active {
 	flex-direction:column;
 	flex: 0 0 100%;
 	background: url("bottle-75.jpg") no-repeat center center local;
+	height:100%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -162,19 +163,10 @@ a:hover{
 	-webkit-transition: all .25s ease;
 }
 
-@media only screen and (max-width : 550px) {
-	h1 {
-		font-size:5em;
-	}
-	.container {
-		border:15px solid white;
-	}
-	.header {
-		margin-top:1em;
-		font-size:14px;
-	}
-}
-@media only screen and (min-width : 800px) and (max-width : 1024px)  {
+@media only screen
+	and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2)  {
 	.full {
 		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("bottle-50.jpg") no-repeat center top local;
 		-webkit-background-size: cover;
@@ -198,8 +190,54 @@ a:hover{
 		display: inline-block;
 	}
 }
-@media only screen and (max-width : 768px)  {
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+		.full {
+			background-color:black;
+			background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("bottle-25.jpg") no-repeat center top local;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+
+		}
+		.full--log {
+			width:100%;
+		}
+		.full--log h1 {
+			text-align: center;
+			font-size:5em;
+		}
+		.full--log .full--info {
+			font-size:1.5em;
+		}
+		.footer {
+			margin-top:-2em;
+			height:2em;
+		}
+		.footer p, .footer a {
+			display: inline-block;
+		}
+		form {
+			text-align: center;
+			font-size:1.5em;
+		}
+		form button {
+			width:45%;
+		}
+		.full--log h1 span {
+			display: inline-block;
+		}
+}
+@media only screen
+	and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+	{
 	.full {
+		background-color:black;
 		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("bottle-25.jpg") no-repeat center top local;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;

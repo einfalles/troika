@@ -1,0 +1,56 @@
+@media only screen and (max-width : 1024px)  {
+	.full {
+		/*background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("bottle-50.jpg") no-repeat center top local;*/
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-color:red;
+
+	}
+	.full--log {
+		width:100%;
+	}
+	.full--log h1 {
+		text-align: center;
+	}
+	form {
+		text-align: center;
+	}
+	form button {
+		width:25%;
+	}
+	.full--log h1 span {
+		display: inline-block;
+	}
+}
+@media only screen and (max-width : 768px)  {
+	.full {
+		/*background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("bottle-25.jpg") no-repeat center top local;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;*/
+		background-color:black;
+	}
+	.full--log {
+		width:100%;
+	}
+	.full--log h1 {
+		text-align: center;
+		font-size:7em;
+	}
+	.full--log .full--info {
+		font-size:2.5em;
+	}
+	form {
+		text-align: center;
+		font-size:2.5em;
+	}
+	form button {
+		width:45%;
+	}
+	.full--log h1 span {
+		display: inline-block;
+	}
+}
