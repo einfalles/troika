@@ -174,9 +174,33 @@ a:hover{
 		font-size:14px;
 	}
 }
-@media only screen and (min-width : 768px) and (max-width : 1024px)  {
+@media only screen and (min-width : 800px) and (max-width : 1024px)  {
 	.full {
 		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("bottle-50.jpg") no-repeat center top local;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	.full--log {
+		width:100%;
+	}
+	.full--log h1 {
+		text-align: center;
+	}
+	form {
+		text-align: center;
+	}
+	form button {
+		width:25%;
+	}
+	.full--log h1 span {
+		display: inline-block;
+	}
+}
+@media only screen and (max-width : 768px)  {
+	.full {
+		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("bottle-25.jpg") no-repeat center top local;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -201,11 +225,5 @@ a:hover{
 	}
 	.full--log h1 span {
 		display: inline-block;
-	}
-}
-@media only screen and (max-width : 768px)  {
-
-	.full--log {
-		width:70%;
 	}
 }
