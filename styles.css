@@ -122,10 +122,13 @@ form input:focus, textarea:focus, form input:active {
 	font-weight:normal;
 }
 
-.full--log span{
+.full--log h1 a{
 	font-weight:bold;
 	cursor: pointer;
 	text-decoration: underline;
+}
+.full--log h1 span {
+	display: block;
 }
 .full--log .full--info{
 	font-size:1.5em;
@@ -182,8 +185,18 @@ a:hover{
 	.full--log {
 		width:100%;
 	}
+	.full--log h1 {
+		text-align: center;
+	}
+	form {
+		text-align: center;
+	}
+	.full--log h1 span {
+		display: inline-block;
+	}
 }
 @media only screen and (max-width : 768px)  {
+
 	.full--log {
 		width:70%;
 	}
