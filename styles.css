@@ -69,7 +69,41 @@ form input:focus, textarea:focus, form input:active {
 	box-shadow:0 0 0 0;
   border: 1px inset #2793C7;
 }
-
+.popup {
+	height:100%;
+	width:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color:rgba(0,0,0,0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.popup--container {
+	width: 40%;
+	background-color: white;
+	padding:2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.popup--container p {
+	font-family: 'Brandon Text W01 Regular';
+	font-size:1.3em;
+}
+.popup--buttons {
+	margin-top:1em;
+}
+.popup--button {
+  font-family: 'Brandon Text W01 Regular';
+	padding:0.897em;
+	margin-left:0.5em;
+	background-color:#1484BF;
+	border-radius: 4px;
+	font-size:16px;
+}
 .footer {
 	background-color:rgba(0,0,0,0);
 	/*background-color:white;*/
